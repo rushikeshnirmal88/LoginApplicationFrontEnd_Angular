@@ -1,0 +1,75 @@
+<!-- <div class="text-center">
+<p>login works!</p>
+</div> -->
+
+    <div class="bootstrap-wrapper">
+        <div class="container test-center">
+            <div class="row" style="margin-top: 27px;">
+                <div class="col-md-6 offset-md-3">
+    
+                <mat-card class="container">
+                    
+                    <div class="container test-center">
+        
+                        <img src="../../../assets/logo.png " style="height: 90px;" alt=""/>
+                    </div>
+                    <h1 class="container test-center">Register Here !!</h1>
+                    <!--Data Interpolation-->
+                   <!--  {{user |json}} -->
+                    <form (ngSubmit)="registerUser()">
+                        <!--Username Field --> 
+                        <!-- <mat-form-field  class="form-field" appearance="outline">
+                            <mat-label>User Id</mat-label>
+                            <input [(ngModel)]="user.id" name="id"
+                            matInput placeholder="Enter Username" required>
+    
+                          </mat-form-field> -->
+
+                        <mat-form-field  class="form-field" appearance="outline">
+                            <mat-label>Email Id</mat-label>
+                            <input [(ngModel)]="user.emailid" name="emailid"
+                            matInput placeholder="Enter EmailId" required>
+                            <mat-hint>EmailId must be unique !!</mat-hint>
+                          </mat-form-field>
+                          
+                          <mat-form-field  class="form-field" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input [(ngModel)]="user.username" name="username"
+                            matInput placeholder="Enter Username" required>
+                            
+                          </mat-form-field>
+
+
+    
+                          <mat-form-field  class="form-field" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input  [(ngModel)]="user.password" name="password"
+                            type="password" matInput placeholder=" Enter Password" required>
+                          </mat-form-field>
+
+                          <mat-form-field  class="form-field" appearance="outline">
+                            <mat-label>Confirm Password</mat-label>
+                            <input name="password"
+                            type="password" matInput placeholder="Confirm Password" required >
+                          </mat-form-field>
+    
+    
+                          
+    
+                          <div class="container test-center">
+                            <button type="submit" color="primary" mat-raised-button>Register</button>
+                            <button type="reset" color="accent" style="margin-left: 27px;" mat-raised-button>Clear</button>
+                            <button  type="button" class="btn btn-primary" style="margin-left: 27px;" (click)="goToBack()" mat-raised-button >Back</button>
+                          </div>
+    
+                    </form>
+                  </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+    
+                    

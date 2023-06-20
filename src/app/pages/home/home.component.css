@@ -1,0 +1,14 @@
+
+.container { 
+    height: 200px;
+    position: relative;
+    border: 3px solid green; 
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 0.9px solid coral; 
+  }

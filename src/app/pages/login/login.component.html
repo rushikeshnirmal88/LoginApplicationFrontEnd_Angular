@@ -1,0 +1,60 @@
+<!-- <div class="text-center">
+<p>login works!</p>
+</div> -->
+<div class="bootstrap-wrapper">
+    <div class="container test-center">
+        <div class="row" style="margin-top: 27px;">
+            <div class="col-md-6 offset-md-3">
+
+            <mat-card class="container">
+                
+                <div class="container test-center">
+    
+                    <img src="../../../assets/logo.png " style="height: 90px;" alt=""/>
+                </div>
+                <h1 class="container test-center">Login Here !!</h1>
+                <!--Data Interpolation-->
+               <!--  {{user |json}} -->
+                <form (ngSubmit)="loginUser()">
+                  <small class="text-danger">{{msg}}</small>
+                    <!--Username Field -->
+                    <mat-form-field  class="form-field" appearance="outline">
+                        <mat-label>EmailId</mat-label>
+                        <input
+                        matInput placeholder="Enter Username" required 
+                        [(ngModel)]="user.emailid" name="emailid">
+                        <mat-hint>EmailId must be unique !!</mat-hint>
+                      </mat-form-field>
+
+                      <!-- <div *ngIf="emailid.errors &&(emialid.invalid && emailid.touched)">
+                        <small *ngIf="emailid.errors.required">Email Id Required</small>
+
+                      </div> -->
+
+                      <mat-form-field  class="form-field" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input 
+                        type="password" matInput placeholder=" Enter Password" required
+                        [(ngModel)]="user.password" name="password">
+                      </mat-form-field>
+
+                      
+
+                      <div class="container test-center">
+                        <p><input type="checkbox" name="Remeber">Remember Me</p>
+                        <p>Don't Have Account ?<a href="/register">Register Hear</a></p>
+                        <button type="submit" color="primary" mat-raised-button>Login</button>
+                        <button type="reset" color="accent" style="margin-left: 27px;" mat-raised-button>Clear</button>
+                        <button  type="button" class="btn btn-primary" style="margin-left: 27px;" (click)="goToBack()" mat-raised-button >Back</button>
+                      </div>
+
+                </form>
+              </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                
